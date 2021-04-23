@@ -76,6 +76,8 @@ httpNodeAuth
 
 httpRoot
 : this sets the root url for both admin and node endpoints. It overrides the values set by `httpAdminRoot` and `httpNodeRoot`.
+httpRoot **DEPRECATED**
+: this sets the root url for both admin and node endpoints. It overrides the values set by `httpAdminRoot` and `httpNodeRoot`. Usage of this is now deprecated - please use httpAdminRoot and httpNodeRoot explicitly.
 
 https
 : enables https, with the specified options object, as defined
@@ -122,7 +124,7 @@ logging
  - **debug** - record information which is more verbose than info + info + warn + error + fatal errors
  - **trace** - record very detailed logging + debug + info + warn + error + fatal errors
 
-The default level is `info`. For embedded devices with limited flash storage you may wish to set this to `fatal` to minimise writes to "disk".        
+The default level is `info`. For embedded devices with limited flash storage you may wish to set this to `fatal` to minimise writes to "disk".
 
 externalModules
 : Configure how the runtime will handle external npm modules. This covers:
