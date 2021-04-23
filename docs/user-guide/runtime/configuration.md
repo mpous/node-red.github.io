@@ -19,7 +19,7 @@ properties are ignored and are left to the embedding application to implement.
 ### Runtime Configuration
 
 flowFile
-: the file used to store the flows. Default: `flows_<hostname>.json`
+: the file used to store the flows. If not set it will be set to `flows_<hostname>.json`. Default: `flows.json`
 
 userDir
 : the directory to store all user data, such as flow and credential files and all
