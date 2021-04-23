@@ -74,8 +74,6 @@ httpNodeRoot
 httpNodeAuth
 : enables HTTP Basic Authentication. See `httpAdminAuth` for format.
 
-httpRoot
-: this sets the root url for both admin and node endpoints. It overrides the values set by `httpAdminRoot` and `httpNodeRoot`.
 httpRoot **DEPRECATED**
 : this sets the root url for both admin and node endpoints. It overrides the values set by `httpAdminRoot` and `httpNodeRoot`. Usage of this is now deprecated - please use httpAdminRoot and httpNodeRoot explicitly.
 
