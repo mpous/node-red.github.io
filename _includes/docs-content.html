@@ -4,7 +4,11 @@
     <div class="grid">
 {% if page.toc %}
         <div id="toc-column" class="col-3-12">
-            {% include {{ page.toc }} %}
+            {% if page.toc contains "_includes" %}
+                {% include_relative {{ page.toc }} %}
+            {% else %}
+                {% include {{ page.toc }} %}
+            {% endif %}
             {% include toc-footer.html %}
         </div>
         <div class="col-9-12">

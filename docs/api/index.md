@@ -20,7 +20,11 @@ data.
 
 #### [Context Store API](context)
 
-**New in 0.19** : This API provides a pluggable way to store context data outside of the runtime.
+This API provides a pluggable way to store context data outside of the runtime.
+
+#### [Hooks API](hooks/)
+
+This API provides a way to add custom code at specific points of the runtime.
 
 #### [Editor UI Widgets](ui)
 
